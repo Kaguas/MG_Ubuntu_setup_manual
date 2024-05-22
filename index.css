@@ -1,0 +1,26 @@
+#top {
+    top: 0;
+    left: 0;
+    height: 10%;
+}
+#left {
+    top: 10%;
+    left: 0;
+    width: 20%;
+    height: 90%;
+    text-align: center;
+    float: left;
+    }
+  #right{
+    top: 10%;
+    right: 0;
+    left: 80%;
+    height: 90%;
+    float: right;
+    border-left: 2px solid #ccc;
+    }
+  iframe {
+    border: none;
+    height: 100%;
+    width: 100%;
+    }
