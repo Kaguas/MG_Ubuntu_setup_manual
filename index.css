@@ -1,26 +1,23 @@
 #top {
     top: 0;
     left: 0;
-    height: 10%;
+    height: 5vh;
 }
-#left {
-    top: 10%;
-    left: 0;
-    width: 20%;
-    height: 90%;
-    text-align: center;
-    float: left;
-    }
-  #right{
-    top: 10%;
+#right{
+    top: 0%;
     right: 0;
-    left: 80%;
-    height: 90%;
-    float: right;
+    left: 100%;
+    height: 90vh;
     border-left: 2px solid #ccc;
     }
-  iframe {
+iframe {
     border: none;
     height: 100%;
     width: 100%;
     }
+#table01 {
+  height: 90vh;
+  width: 100%;
+  border: 0;
+
+}
