@@ -37,6 +37,9 @@ ___
 `sudo apt upgrade`<br>
 を実行してください。Ubunutu付属のパッケージがアップデートされます。その後必ず再起動してください。<br>
 
+![Terminal上でアップデー卜する様子](src/teminal.png)<br>
+<center>図1　 Terminal上でsudo apt updateを打ち込んだ様子</center><br>
+
 次に**NVIDIA Driver**(Geforceのドライバ)をインストールしましょう。Terminal上で、<br>
 `ubuntu-drivers devices`<br>
 を実行してください。
