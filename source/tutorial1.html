@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>tutorial_supp1.md</title>
+<title>tutorial1.md</title>
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<!-- Thanks : 「vscode-markdown-pdf」 | MIT License | https://github.com/yzane/vscode-markdown-pdf -->
 
 <style>
 /* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
@@ -382,21 +384,26 @@ code {
 </li>
 </ul>
 <h2 id="%E3%81%93%E3%81%AE%E4%B8%80%E9%80%A3%E3%81%AE%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6">この一連のマニュアルについて</h2>
-<p>基本的なインストール方法は20.04も22.04も変更点はありません。そのため分からないことがあれば先に転送した動画を見るのが手っ取り早いと思います。よってこのマニュアルでは、動画を補足する事項を載せていきます。</p>
+<p>基本的なインストール方法は20.04も22.04も変更点はありません。そのため分からないことがあれば先に転送した動画を見るのが手っ取り早いと思います。このマニュアルでは、動画を補足する事項を載せていきます。</p>
 <h2 id="%E3%81%9D%E3%82%82%E3%81%9D%E3%82%82ubuntu%E3%81%A8%E3%81%AF">そもそもUbuntuとは</h2>
-<p>工事中<br>
+<p><strong>Ubuntu</strong>は、DebianをベースとしたLinux ディストリビューションの一つです。Ubuntu Japanese Teamのページ<br>
+<a href="https://www.ubuntulinux.jp/ubuntu">Ubuntuとは</a><br>
+によると、</p>
+<blockquote>
+<p>Ubuntuは、アフリカの単語で「他者への思いやり」や「皆があっての私」といった意味を持ちます。</p>
+</blockquote>
+<p>ということのようです。とりあえずフリーで使用できるOSなので、思いやりは実際に持っていると言えそうです。<br>
 さて、最近Ubuntu 24.04 LTSがリリースされましたが、まだ日が浅く、サードパーティや各種コミュニティ側が対応できていない可能性があります。そのため、Ubuntu 22.04 LTSをセットアップします。</p>
 <h2 id="%E3%82%BB%E3%83%83%E3%83%88%E3%82%A2%E3%83%83%E3%83%97%E3%81%AE%E5%89%8D%E3%81%AB-%E3%80%9C%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%ABusb%E4%BD%9C%E6%88%90%E3%80%9C">セットアップの前に 〜インストールUSB作成〜</h2>
 <p>UbuntuをPCにインストールするためには、Ubuntuのインストールメディアを作成する必要があります。USBメモリを使用してインストールメディアを作成してみましょう。<br>
 <em>※今回のセットアップ作業では、インストールUSBは予め作成してあるので、改めて作る必要はありません。(ちなみにPart1の内容はUSB作成だけなので、ここでPart2に飛んでもいいと思います。)</em></p>
 <h3 id="%E3%83%87%E3%82%A3%E3%82%B9%E3%82%AF-%E3%82%A4%E3%83%A1%E3%83%BC%E3%82%B8%E3%81%AE%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89">ディスク イメージのダウンロード</h3>
-<p>まず、Ubuntuのディスクイメージ[^1]をダウンロードしましょう。
+<p>まず、Ubuntuのディスクイメージをダウンロードしましょう。
 ダウンロード先として、このマニュアルでは</p>
 <p><a href="https://releases.ubuntu.com/jammy/">本家ダウンロードページ</a><br>
 <a href="https://ftp.riken.jp/Linux/ubuntu-releases/22.04/">理研のミラーページ</a></p>
 <p>の2つを挙げます。動画では本家のページからダウンロードしていますが、大抵は理研のミラーページからダウンロードする方が高速でしょう。(サーバの距離によるもの)<br>
-上記ページから、 <em><strong>64-bit PC (AMD64) desktop image</strong></em> と書かれている方のイメージをダウンロードしましょう。<code>.iso</code>の拡張子がついたイメージがダウンロードできます。
-[^1]: CDやHDDなどのイメージファイルのこと。</p>
+上記ページから、 <em><strong>64-bit PC (AMD64) desktop image</strong></em> と書かれている方のイメージをダウンロードしましょう。<code>.iso</code>の拡張子がついたイメージがダウンロードできます。</p>
 <h3 id="balena-etcher%E3%81%AE%E5%B0%8E%E5%85%A5">balena Etcherの導入</h3>
 <p>さて、ディスクイメージがダウンロードできたら、インストールUSBを作成するためのアプリケーションをインストールしましょう。動画では<strong>Rufus</strong>を用いていますが、ここでは<strong>balena Etcher</strong>を用いて解説してみます。</p>
 <p>お使いのPC環境に合わせて、</p>
