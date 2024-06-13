@@ -38,7 +38,7 @@ ___
 を実行してください。Ubunutu付属のパッケージがアップデートされます。その後必ず再起動してください。<br>
 
 ![Terminal上でアップデー卜する様子](src/teminal.png)<br>
-<center>図1　 Terminal上でsudo apt updateを打ち込んだ様子</center><br>
+図1　 Terminal上でsudo apt updateを打ち込んだ様子<br>
 
 次に**NVIDIA Driver**(Geforceのドライバ)をインストールしましょう。Terminal上で、<br>
 `ubuntu-drivers devices`<br>
@@ -53,7 +53,7 @@ ___
 
 
 <span style="color: gray">
-ubuntuにおけるnvidia-driverはよく壊れますし、よくインストールに失敗します。もし失敗したり、壊れた場合は、一度nvidia-driverをアンインストールし、インストールしなおしてみましょう。それでもダメな場合はnouveau無効化(別ファイルに紹介します)などの手段を取りましょう。時にはubuntuを一からセットアップした方が早い場合もあります。
+ubuntuにおけるnvidia-driverはよく壊れますし、よくインストールに失敗します。もし失敗したり、壊れた場合は、一度nvidia-driverをアンインストールし、インストールしなおしてみましょう。それでもダメな場合はnouveau無効化(調べてみてください。)などの手段を取りましょう。時にはubuntuを一からセットアップした方が早い場合もあります。
 </span>
 <br><br>
 
