@@ -15,7 +15,8 @@
 
 ## そもそもUbuntuとは
 **Ubuntu**は、DebianをベースとしたLinux ディストリビューションの一つです。Ubuntu Japanese Teamのページ<br>
-[Ubuntuとは](https://www.ubuntulinux.jp/ubuntu)<br>
+
+<a href="https://www.ubuntulinux.jp/ubuntu" target="_blank" rel="noopener noreferrer">Ubuntuとは</a> <br>
 によると、
 > Ubuntuは、アフリカの単語で「他者への思いやり」や「皆があっての私」といった意味を持ちます。
 
@@ -30,8 +31,10 @@ UbuntuをPCにインストールするためには、Ubuntuのインストール
 まず、Ubuntuのディスクイメージをダウンロードしましょう。
 ダウンロード先として、このマニュアルでは
 
-[本家ダウンロードページ](https://releases.ubuntu.com/jammy/)<br>
-[理研のミラーページ](https://ftp.riken.jp/Linux/ubuntu-releases/22.04/)
+
+<a href="https://releases.ubuntu.com/jammy/" target="_blank" rel="noopener noreferrer">本家ダウンロードページ</a> <br>
+<a href="https://ftp.riken.jp/Linux/ubuntu-releases/22.04/" target="_blank" rel="noopener noreferrer">理研のミラーページ</a> 
+
 
 の2つを挙げます。動画では本家のページからダウンロードしていますが、大抵は理研のミラーページからダウンロードする方が高速でしょう。(サーバの距離によるもの)<br>
 上記ページから、 ***64-bit PC (AMD64) desktop image*** と書かれている方のイメージをダウンロードしましょう。`.iso`の拡張子がついたイメージがダウンロードできます。
@@ -42,7 +45,9 @@ UbuntuをPCにインストールするためには、Ubuntuのインストール
 
 お使いのPC環境に合わせて、
 
-[balena Etcherのページ](https://etcher.balena.io/)
+
+<a href="https://etcher.balena.io/" target="_blank" rel="noopener noreferrer">balena Etcherのページ</a> 
+
 
 からbalena Etcherをダウンロードし、インストールしてください。
 
