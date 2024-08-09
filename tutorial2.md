@@ -9,7 +9,7 @@
 
 
 ## セットアップの前に 〜使用するパーツの準備〜
-- SSD 256GB以上が望ましい(先生から480GBがもらえる)
+- SSD 256GB以上が望ましい(480GBを準備しています)
 - インストール USB(作成済み)
 - インストール対象のPC(ゴツいPCがあるよ)
 
@@ -22,15 +22,46 @@ ___
 メーカーロゴが表示されたら、すぐにF8キーまたはF11キーを押します。(使用するPCに合わせて、とにかく*boot menu*を開きましょう。)
 すると*boot menu* が表示されるので、そこから`kioxia~`と書かれたUSBメモリを選択しましょう。<br>
 *boot menu*が実装されていないPCの場合は、BIOSの設定からboot diskを選択する必要があります。
-その後`GRUB boot menu`が表示されるので、*try or install ubuntu*を選択します。暫く待つとUbuntuが起動します。
+その後`GNU GRUB`という画面が表示されるので、*try or install ubuntu*を選択します。暫く待つとUbuntuが起動します。<br>
+![GRUB boot menu](src/grub.png)<br>
+図1　GNU GRUB
+
 
 ### インストール
 Ubuntuが起動すると、Installerが自動的に起動します。Installerの指示に従ってインストール作業を行いましょう。<br>
-*※この時、SSDはインストール時にフォーマットして用いるようにしてください。*
+![Installer](src/installer1.png)<br>
+図2 Installer<br>
 
+1. キー配列の設定<br>
+キー配列を日本語キーボード用に設定してください。US配列では記号のキー配置などが変更されています。<br>
+![Key layout](src/key.png)<br>
+図3 キー配列設定<br>
+
+2. ソフトウェアの設定<br>
+更新するかどうかや、サードパーティのソフトウェアをインストールするかどうか聞かれます。お好みで設定してください。(わからない、設定が面倒という人は下図4と同じで大丈夫です。)<br>
+![Software settings](src/thirdsoft.png)<br>
+図4 ソフトウェアの設定<br>
+
+3. インストール先の設定<br>
+インストール先SSDを選択します。おそらく1つしかSSDを接続していないと思うので、そのSSDを用います。<br>
+*※この時、SSDはインストール時にフォーマットして用いるようにしてください。（ただし上書きの場合はこの限りでない)*<br>
+![SSD setting](src/erase.png)<br>
+図5 インストール先の設定<br>
+
+4. 地域設定<br>
+地域を設定します。大阪がないので東京を選択しています。(日本であればOK)<br>
+![locale setting](src/locale.png)<br>
+図6 地域設定<br>
+
+5. ユーザ設定<br>
+PCを使用するユーザを設定します。お好きにどうぞ。(ただしパスワードは規定の通り)<br>
+![user setting](src/login.png)<br>
+図7 ユーザ設定<br>
+
+ここまで設定を行うと、あとはファイルのコピーなどの作業が始まります。数十分はかかりますので気長に待ちましょう。
 ___
 ## アップデートとドライバのインストール
-再起動すると、SSDからUbuntuが起動します。ここから、必須の設定を行います。<br>
+インストール終了後、再起動すると、SSDからUbuntuが起動します。ここから、必須の設定を行います。<br>
 まずはUbuntuのアップデートを行います。Terminal上で、<br>
 `sudo apt update`<br>
 と、<br>
@@ -38,7 +69,7 @@ ___
 を実行してください。Ubunutu付属のパッケージがアップデートされます。その後必ず再起動してください。<br>
 
 ![Terminal上でアップデー卜する様子](src/teminal.png)<br>
-図1　 Terminal上でsudo apt updateを打ち込んだ様子<br>
+図8　 Terminal上でsudo apt updateを打ち込んだ様子<br>
 
 次に**NVIDIA Driver**(Geforceのドライバ)をインストールしましょう。Terminal上で、<br>
 `ubuntu-drivers devices`<br>

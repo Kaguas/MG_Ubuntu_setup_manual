@@ -4,7 +4,7 @@
 <title>tutorial2.md</title>
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 
-<!-- Thanks : 「vscode-markdown-pdf」 | MIT License | https://github.com/yzane/vscode-markdown-pdf -->
+<!-- Thanks to「vscode-markdown-pdf」 | MIT License | https://github.com/yzane/vscode-markdown-pdf -->
 
 <style>
 /* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
@@ -384,7 +384,7 @@ code {
 </ul>
 <h2 id="%E3%82%BB%E3%83%83%E3%83%88%E3%82%A2%E3%83%83%E3%83%97%E3%81%AE%E5%89%8D%E3%81%AB-%E3%80%9C%E4%BD%BF%E7%94%A8%E3%81%99%E3%82%8B%E3%83%91%E3%83%BC%E3%83%84%E3%81%AE%E6%BA%96%E5%82%99%E3%80%9C">セットアップの前に 〜使用するパーツの準備〜</h2>
 <ul>
-<li>SSD 256GB以上が望ましい(先生から480GBがもらえる)</li>
+<li>SSD 256GB以上が望ましい(480GBを準備しています)</li>
 <li>インストール USB(作成済み)</li>
 <li>インストール対象のPC(ゴツいPCがあるよ)</li>
 </ul>
@@ -396,20 +396,57 @@ code {
 メーカーロゴが表示されたら、すぐにF8キーまたはF11キーを押します。(使用するPCに合わせて、とにかく<em>boot menu</em>を開きましょう。)
 すると<em>boot menu</em> が表示されるので、そこから<code>kioxia~</code>と書かれたUSBメモリを選択しましょう。<br>
 <em>boot menu</em>が実装されていないPCの場合は、BIOSの設定からboot diskを選択する必要があります。
-その後<code>GRUB boot menu</code>が表示されるので、<em>try or install ubuntu</em>を選択します。暫く待つとUbuntuが起動します。</p>
+その後<code>GNU GRUB</code>という画面が表示されるので、<em>try or install ubuntu</em>を選択します。暫く待つとUbuntuが起動します。<br>
+<img src="src/grub.png" alt="GRUB boot menu"><br>
+図1　GNU GRUB</p>
 <h3 id="%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB">インストール</h3>
 <p>Ubuntuが起動すると、Installerが自動的に起動します。Installerの指示に従ってインストール作業を行いましょう。<br>
-<em>※この時、SSDはインストール時にフォーマットして用いるようにしてください。</em></p>
+<img src="src/installer1.png" alt="Installer"><br>
+図2 Installer<br></p>
+<ol>
+<li>
+<p>キー配列の設定<br>
+キー配列を日本語キーボード用に設定してください。US配列では記号のキー配置などが変更されています。<br>
+<img src="src/key.png" alt="Key layout"><br>
+図3 キー配列設定<br></p>
+</li>
+<li>
+<p>ソフトウェアの設定<br>
+更新するかどうかや、サードパーティのソフトウェアをインストールするかどうか聞かれます。お好みで設定してください。(わからない、設定が面倒という人は下図4と同じで大丈夫です。)<br>
+<img src="src/thirdsoft.png" alt="Software settings"><br>
+図4 ソフトウェアの設定<br></p>
+</li>
+<li>
+<p>インストール先の設定<br>
+インストール先SSDを選択します。おそらく1つしかSSDを接続していないと思うので、そのSSDを用います。<br>
+<em>※この時、SSDはインストール時にフォーマットして用いるようにしてください。（ただし上書きの場合はこの限りでない)</em><br>
+<img src="src/erase.png" alt="SSD setting"><br>
+図5 インストール先の設定<br></p>
+</li>
+<li>
+<p>地域設定<br>
+地域を設定します。大阪がないので東京を選択しています。(日本であればOK)<br>
+<img src="src/locale.png" alt="locale setting"><br>
+図6 地域設定<br></p>
+</li>
+<li>
+<p>ユーザ設定<br>
+PCを使用するユーザを設定します。お好きにどうぞ。(ただしパスワードは規定の通り)<br>
+<img src="src/login.png" alt="user setting"><br>
+図7 ユーザ設定<br></p>
+</li>
+</ol>
+<p>ここまで設定を行うと、あとはファイルのコピーなどの作業が始まります。数十分はかかりますので気長に待ちましょう。</p>
 <hr>
 <h2 id="%E3%82%A2%E3%83%83%E3%83%97%E3%83%87%E3%83%BC%E3%83%88%E3%81%A8%E3%83%89%E3%83%A9%E3%82%A4%E3%83%90%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB">アップデートとドライバのインストール</h2>
-<p>再起動すると、SSDからUbuntuが起動します。ここから、必須の設定を行います。<br>
+<p>インストール終了後、再起動すると、SSDからUbuntuが起動します。ここから、必須の設定を行います。<br>
 まずはUbuntuのアップデートを行います。Terminal上で、<br>
 <code>sudo apt update</code><br>
 と、<br>
 <code>sudo apt upgrade</code><br>
 を実行してください。Ubunutu付属のパッケージがアップデートされます。その後必ず再起動してください。<br></p>
 <p><img src="src/teminal.png" alt="Terminal上でアップデー卜する様子"><br>
-図1　 Terminal上でsudo apt updateを打ち込んだ様子<br></p>
+図8　 Terminal上でsudo apt updateを打ち込んだ様子<br></p>
 <p>次に<strong>NVIDIA Driver</strong>(Geforceのドライバ)をインストールしましょう。Terminal上で、<br>
 <code>ubuntu-drivers devices</code><br>
 を実行してください。
